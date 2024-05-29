@@ -28,7 +28,7 @@ const links = [
 function Navbar() {
   return (
     <header
-      className="fixed h-[60px] bg-[#525AA0] flex justify-between items-center z-10 top-[36px] left-3 sm:left-4 lg:left-11 xl:left-20 2xl:left-32 right-3 sm:right-4 lg:right-11 xl:right-20 2xl:right-32 rounded-[15px] px-[30px]"
+      className="fixed h-[60px] bg-[#525AA0] flex justify-between items-center z-10 top-[36px]  left-20 lg:left-11 md:left-4 sm:left-3 right-20 lg:right-11 md:right-4 sm:right-3 rounded-[15px] px-[30px]"
       style={{
         boxShadow: "0px 15px 25px 0px #00000026",
       }}

@@ -5,6 +5,7 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/rizzui/dist/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -15,6 +16,15 @@ const config: Config = {
       },
       fontFamily: {
         switzer: ["var(--font-switzer)"],
+      },
+      screens: {
+        "2xl": { max: "1535px" },
+        xl: { max: "1279px" },
+        lg: { max: "1024px" },
+        slg: { max: "900px" },
+        md: { max: "767px" },
+        sm: { max: "425px" },
+        xsm: { max: "375px" },
       },
     },
   },
