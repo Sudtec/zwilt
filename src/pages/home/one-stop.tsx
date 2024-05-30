@@ -15,190 +15,92 @@ import {
   LogoWhite,
 } from "@/icons";
 import Link from "next/link";
+import OneStopLeft from "./OneStopLeft";
+import OneStopCard from "./OneStopCard";
+
+const cardOne = {
+  title: "IT & Development",
+  skills: [
+    {
+      name: "Shopify Developer",
+      icon: <Shopify className="w-[39px] h-[40px] md:w-[29px] md:h-[30px]" />,
+    },
+    {
+      name: "Magento Developer",
+      icon: <Magento className="w-[32px] md:w-[24px] h-[40px] md:h-[30px]" />,
+    },
+    {
+      name: "Data Scientist",
+      icon: <Data className="w-[42px] md:w-[33px]  h-[39px] md:h-[27px]" />,
+    },
+    {
+      name: "Webflow Developer",
+      icon: <Webflow className="w-[43px] md:w-[33px] h-[30px] md:h-[23px]" />,
+    },
+    {
+      name: "Dot Net Developer",
+      icon: <DotNet className="w-[69px] md:w-[47px] h-[40px] md:h-[33px]" />,
+    },
+  ],
+};
+
+const cardTwo = {
+  title: "Design & Creative",
+  skills: [
+    {
+      name: "UX Designer",
+      icon: <Figma className="w-[26px] md:w-[19px] h-[39px] md:h-[27px]" />,
+    },
+    {
+      name: "Graphics Designer",
+      icon: <Photoshop className="w-[48px] md:w-[33px] h-[48px] md:h-[33px]" />,
+    },
+    {
+      name: "Illustration Artist",
+      icon: (
+        <Illustrator className="w-[47px] md:w-[35px] h-[44px] md:h-[41px]" />
+      ),
+    },
+    {
+      name: "Unreal Engine",
+      icon: <Unreal className="w-[55px] md:w-[44px] h-[55px] md:h-[44px]" />,
+    },
+    {
+      name: "Cinema 4D",
+      icon: <Cinema className="w-[53px] md:w-[44px] h-[44px]" />,
+    },
+  ],
+};
 
 const OneStop = () => {
   return (
     <section>
-      <div className="h-[132.99px] w-full bg-[url('/img/pattern.png')] bg-cover"></div>
-      <div className="pt-[183px] pb-[148px] bg-[url('/img/bg1.png')] bg-cover app-container">
-        <div className="w-[977px] mx-auto">
-          <h4 className="text-center font-bold text-[54px] leading-[64px]">
+      <div className="h-[132.99px] md:h-[100px] w-full bg-[url('/img/pattern.png')] bg-cover"></div>
+      <div className="pt-[183px] lg:pt-[130px] pb-[148px] lg:pb-[110px] bg-[url('/img/bg1.png')] bg-cover app-container">
+        <div className="w-[977px] lg:w-[75vw] md:w-[85vw] mx-auto">
+          <h4 className="text-center font-bold text-[54px] lg:text-[48px]  md:text-[42px] sm:text-[36px] leading-[64px] lg:leading-[58px] md:leading-[48px]">
             Your one-stop marketplace for finding the talent your business
             needs.
           </h4>
         </div>
 
-        <div className="mt-[90px] space-y-[30px]">
-          <div className="flex justify-between items-center">
-            <div className="w-[380px]">
-              <h4 className="text-[#202229] text-[24px] font-medium">
-                Find Dev and IT professionals to scale your business.{" "}
-              </h4>
-
-              <div className="grid grid-cols-2 gap-y-2 mt-5">
-                <div className="flex items-center gap-x-2">
-                  <Skill />
-                  <span className="text-[16px] text-[#202229CC]">
-                    989 Skills
-                  </span>
-                </div>
-                <div className="flex items-center gap-x-2">
-                  <Category />
-                  <span className="text-[16px] text-[#202229CC]">
-                    45 Sub-Categories
-                  </span>
-                </div>
-                <div className="flex items-center gap-x-2">
-                  <Profile />
-                  <span className="text-[16px] text-[#202229CC]">
-                    1011 Profiles
-                  </span>
-                </div>
-              </div>
-            </div>
-            {/* TODO: Remove the Height Later and Make the Component Reusable*/}
-            <div className="flex-1 bg-white h-[224px] max-w-[730px] rounded-[7px] py-[18px] pl-7 pr-[26px]">
-              <label className="block text-base text-[#202229] leading-[23.8px] pl-[1px]">
-                IT & Development
-              </label>
-              <div className="flex justify-between items-center mt-[15px]">
-                <div className="space-y-3">
-                  <div className="h-[96px] w-[96px] rounded-full bg-[#F6F6F6] flex items-center justify-center">
-                    <Shopify className="w-[39px] h-[40px]" />
-                  </div>
-                  <label className="block max-w-[81px] mx-auto text-center font-semibold text-sm">
-                    Shopify Developer
-                  </label>
-                </div>
-                <div className="space-y-3">
-                  <div className="h-[96px] w-[96px] rounded-full bg-[#F6F6F6] flex items-center justify-center">
-                    <Magento className="w-[32px] h-[40px]" />
-                  </div>
-                  <label className="block max-w-[81px] mx-auto text-center font-semibold text-sm">
-                    Magento Developer
-                  </label>
-                </div>
-                <div className="space-y-3">
-                  <div className="h-[96px] w-[96px] rounded-full bg-[#F6F6F6] flex items-center justify-center">
-                    <Data className="w-[42px] h-[39px]" />
-                  </div>
-                  <label className="block max-w-[81px] mx-auto text-center font-semibold text-sm">
-                    Data Scientist
-                  </label>
-                </div>
-                <div className="space-y-3">
-                  <div className="h-[96px] w-[96px] rounded-full bg-[#F6F6F6] flex items-center justify-center">
-                    <Webflow className="w-[43px] h-[30px]" />
-                  </div>
-                  <label className="block max-w-[81px] mx-auto text-center font-semibold text-sm">
-                    Webflow Developer
-                  </label>
-                </div>
-                <div className="space-y-3">
-                  <div className="h-[96px] w-[96px] rounded-full bg-[#F6F6F6] flex items-center justify-center">
-                    <DotNet className="w-[69px] h-[40px]" />
-                  </div>
-                  <label className="block max-w-[81px] mx-auto text-center font-semibold text-sm">
-                    Dot Net Developer
-                  </label>
-                </div>
-                <div className="space-y-3">
-                  <div className="h-[96px] w-[96px] rounded-[30px] bg-[#F6F6F6] flex items-center justify-center mb-[48px]">
-                    <Logo className="w-[25px] h-[15px]" />
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div className="mt-[90px] lg:mt-[50px] space-y-[30px] lg:space-y-[50px]">
+          <div className="flex justify-between items-center lg:flex-col lg:gap-y-8 ">
+            <OneStopLeft title="Find Dev and IT professionals to scale your business." />
+            <OneStopCard data={cardOne} />
           </div>
-          <div className="flex justify-between items-center">
-            <div className="w-[380px]">
-              <h4 className="text-[#202229] text-[24px] font-medium">
-                Explore Creative individuals with a keen eye for detail.{" "}
-              </h4>
-
-              <div className="grid grid-cols-2 gap-y-2 mt-5">
-                <div className="flex items-center gap-x-2">
-                  <Skill />
-                  <span className="text-[16px] text-[#202229CC]">
-                    989 Skills
-                  </span>
-                </div>
-                <div className="flex items-center gap-x-2">
-                  <Category />
-                  <span className="text-[16px] text-[#202229CC]">
-                    45 Sub-Categories
-                  </span>
-                </div>
-                <div className="flex items-center gap-x-2">
-                  <Profile />
-                  <span className="text-[16px] text-[#202229CC]">
-                    1011 Profiles
-                  </span>
-                </div>
-              </div>
-            </div>
-            {/* TODO: Remove the Height Later and Make the Component Reusable*/}
-            <div className="flex-1 bg-white h-[224px] max-w-[730px] rounded-[7px] py-[18px] pl-7 pr-[26px]">
-              <label className="block text-base text-[#202229] leading-[23.8px] pl-[1px]">
-                Design & Creative
-              </label>
-              <div className="flex justify-between items-center mt-[15px]">
-                <div className="space-y-3">
-                  <div className="h-[96px] w-[96px] rounded-[30px] bg-[#F6F6F6] flex items-center justify-center mb-[48px]">
-                    <Logo className="w-[25px] h-[15px] rotate-180" />
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <div className="h-[96px] w-[96px] rounded-full bg-[#F6F6F6] flex items-center justify-center">
-                    <Figma className="w-[26px] h-[39px]" />
-                  </div>
-                  <label className="block max-w-[79px] mx-auto text-center font-semibold text-sm">
-                    UX Designer
-                  </label>
-                </div>
-                <div className="space-y-3">
-                  <div className="h-[96px] w-[96px] rounded-full bg-[#F6F6F6] flex items-center justify-center">
-                    <Photoshop className="w-[48px] h-[48px]" />
-                  </div>
-                  <label className="block max-w-[81px] mx-auto text-center font-semibold text-sm">
-                    Graphics Designer
-                  </label>
-                </div>
-                <div className="space-y-3">
-                  <div className="h-[96px] w-[96px] rounded-full bg-[#F6F6F6] flex items-center justify-center">
-                    <Illustrator className="w-[47px] h-[44px]" />
-                  </div>
-                  <label className="block max-w-[81px] mx-auto text-center font-semibold text-sm">
-                    Illustration Artist
-                  </label>
-                </div>
-                <div className="space-y-3">
-                  <div className="h-[96px] w-[96px] rounded-full bg-[#F6F6F6] flex items-center justify-center">
-                    <Unreal className="w-[55px] h-[55px]" />
-                  </div>
-                  <label className="block max-w-[81px] mx-auto text-center font-semibold text-sm">
-                    Unreal Engine
-                  </label>
-                </div>
-                <div className="space-y-3">
-                  <div className="h-[96px] w-[96px] rounded-full bg-[#F6F6F6] flex items-center justify-center">
-                    <Cinema className="w-[53px] h-[53px]" />
-                  </div>
-                  <label className="block max-w-[70px] mx-auto text-center font-semibold text-sm">
-                    Cinema 4D
-                  </label>
-                </div>
-              </div>
-            </div>
+          <div className="flex justify-between items-center lg:flex-col lg:gap-y-8">
+            <OneStopLeft title="Explore Creative individuals with a keen eye for detail." />
+            <OneStopCard data={cardTwo} />
           </div>
-          <div className="flex justify-between items-center">
-            <Link href={"#"} className="btn ">
+          <div className="flex md:flex-col-reverse justify-between items-center md:items-start md:gap-y-8 lg:w-[75vw] md:w-[85vw] mx-auto">
+            <Link href={"#"} className="custom-btn ">
               <label>Explore More</label>
               <span>
                 <LogoWhite className="w-[25px] h-[15px]" />
               </span>
             </Link>
-            <p className="text-[22px] leading-[22px] w-[730px] font-light">
+            <p className="text-[22px] leading-[22px] w-[730px] lg:w-full font-light lg:flex-1 lg:text-end md:text-start">
               <span className="font-bold">30 more</span> to explore
             </p>
           </div>

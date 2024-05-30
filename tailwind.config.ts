@@ -17,17 +17,20 @@ const config: Config = {
       fontFamily: {
         switzer: ["var(--font-switzer)"],
       },
-      screens: {
-        "2xl": { max: "1535px" },
-        xl: { max: "1279px" },
-        lg: { max: "1024px" },
-        slg: { max: "900px" },
-        md: { max: "767px" },
-        sm: { max: "425px" },
-        xsm: { max: "375px" },
-      },
+    },
+    screens: {
+      "2xl": { max: "1535px" },
+      xl: { max: "1279px" },
+      lg: { max: "1024px" },
+      slg: { max: "900px" },
+      md: { max: "767px" },
+      sm: { max: "425px" },
+      xsm: { max: "375px" },
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui: {
+    themes: [],
+  },
 };
 export default config;

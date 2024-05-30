@@ -19,9 +19,9 @@ const Testimonial: React.FC = () => {
           />
         </div>
 
-        <div className="mt-[70px] flex space-x-[183px]">
-          <div className=" ml-[78px] text-[#fff] ">
-            <div className="font-[700] text-[54px] w-[379px] leading-[64px] flex h-[192px]">
+        <div className="mt-[70px] flex space-x-[183px] xl:space-x-[110px] lg:block lg:space-x-0 lg:ml-[78px] md:ml-[30px]">
+          <div className=" ml-[78px] text-[#fff] lg:ml-0">
+            <div className="font-[700] text-[54px] w-[379px] leading-[64px] flex h-[192px] xl:text-[34px] xl:w-[400px] lg:text-[24px] lg:leading-[36px] lg:h-auto sm:w-[300px]">
               <span>
                 How it worked for Jason{" "}
                 <span>
@@ -30,16 +30,16 @@ const Testimonial: React.FC = () => {
                     alt="Jason Makki"
                     width={57}
                     height={57}
-                    className="rounded-full inline"
+                    className="rounded-full inline lg:w-[36px] lg:h-[36px]"
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
                   />
                 </span>{" "}
-                at <Groovehq width={192} height={51} />
+                at&nbsp; <Groovehq width={192} height={51} className="inline xl:w-[100px]"/>
               </span>
             </div>
 
-            <div className="mt-[44px] font-[400] leading-[32px] text-[22px] w-[461px]">
+            <div className="mt-[44px] font-[400] leading-[32px] text-[22px] w-[461px] xl:mt-[0px] xl:w-[400px] lg:text-[16px] sm:w-[300px]">
               <p className="opacity-80">
                 Zwilt enabled us to deliver on time and they’ve been heavy
                 hitters in our corner since.
@@ -60,7 +60,7 @@ const Testimonial: React.FC = () => {
                   alt="Jason Makki"
                   width={99}
                   height={99}
-                  className={`rounded-[40.05px] mr-[16.21px] ${
+                  className={`rounded-[40.05px] mr-[16.21px] lg:w-[64px] lg:h-[64px] lg:rounded-[20px] ${
                     isHovered ? "fadeIn ease-in-out" : ""
                   }`}
                 />
@@ -68,14 +68,14 @@ const Testimonial: React.FC = () => {
                 <div
                   className={`w-[99px] h-[99px] rounded-[40.05px] bg-[#AF7CFF] flex items-center justify-center mr-[16.21px] ${
                     !isHovered ? "fadeIn" : ""
-                  }`}
+                  } lg:w-[64px] lg:h-[64px] lg:rounded-[20px]`}
                 >
-                  <Groovehqwhite width={76} height={21} />
+                  <Groovehqwhite width={76} height={21} className="lg:w-[48px]"/>
                 </div>
               )}
 
               <div className="text-white">
-                <h1 className="font-[600] text-[34px] leading-[22px] mb-[3px]">
+                <h1 className="font-[600] text-[34px] leading-[22px] mb-[3px] lg:text-[24px]">
                   Jason Makki
                 </h1>
                 <p className="opacity-40 font-[500] text-[16px] leading-[40px]">
@@ -93,7 +93,7 @@ const Testimonial: React.FC = () => {
             </div>
 
             <div>
-              <p className="opacity-80 w-[499px] text-white mt-[59px] text-[22px] leading-[32px] mb-[197px]">
+              <p className="opacity-80 w-[499px] text-white mt-[59px] text-[22px] leading-[32px] mb-[197px] xl:w-[400px] lg:mb-[100px] lg:text-[16px] sm:w-[300px]">
                 Zwilt enabled us to deliver on time and they’ve been heavy
                 hitters in our corner since. Zwilt enabled us to deliver on time
                 and they’ve been heavy hitters in our corner since.Zwilt enabled

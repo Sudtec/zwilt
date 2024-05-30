@@ -1,5 +1,6 @@
 export { default as Logo } from "./logo.svg";
 export { default as LogoWhite } from "./logo-white.svg";
+export { default as LogoOrange } from "./logo-orange.svg";
 export { default as Zwilt } from "./zwilt.svg";
 export { default as Skill } from "./skill.svg";
 export { default as Profile } from "./profile.svg";
@@ -17,8 +18,13 @@ export { default as Cinema } from "./cinema.svg";
 export { default as OpenAccordion } from "./open-accordion.svg";
 export { default as CloseAccordion } from "./close-accordion.svg";
 export { default as ListIcon } from "./list-icon.svg";
+export { default as ListOrange } from "./list-orange.svg";
+export { default as ListGreen } from "./list-green.svg";
 export { default as Groovehq } from "./groovehq.svg";
 export { default as Lefticon } from "./leftIcon.svg";
 export { default as Righticon } from "./rightIcon.svg";
 export { default as Groovehqwhite } from "./groovehqwhite.svg";
-
+export { default as Star } from "./Star.svg";
+export { default as Rating } from "./rating.svg";
+export { default as Close } from "./Close.svg";
+export { default as Toggler } from "./Toggler.svg";

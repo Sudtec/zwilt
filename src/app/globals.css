@@ -9,7 +9,7 @@
   .app-container {
     @apply w-full mx-auto px-20 lg:px-11 md:px-4 sm:px-3;
   }
-  .btn {
+  .custom-btn {
     position: relative;
     width: 220px;
     height: 74px;
@@ -22,14 +22,19 @@
     font-size: 22px;
     letter-spacing: 18;
   }
-  .btn.learn {
+  .custom-btn {
+    @apply md:w-[202px] md:h-[50px] md:text-[18px];
+
+
+  }
+  .custom-btn.learn {
     width: 202px !important;
   }
-  .btn label {
+  .custom-btn label {
     padding-left: 82px;
     transition: 0.3s;
   }
-  .btn:hover label {
+  .custom-btn:hover label {
     padding-left: 15px;
     padding-right: 62px;
 
@@ -39,7 +44,7 @@
     width: 134px; */
     z-index: 999;
   }
-  .btn span {
+  .custom-btn span {
     position: absolute;
     width: 74px;
     height: 74px;
@@ -51,16 +56,80 @@
     left: 0px;
     transition: 0.3s ease-in-out;
   }
-  .btn:hover span {
+  .custom-btn:hover span {
     width: 220px;
     justify-content: flex-end;
     padding-right: 15px;
+  }
+
+  
+
+
+  .footerbtn {
+    background-color: #292b34;
+    width: 164px;
+    text-align: center;
+    padding: 18px 5px;
+    border-radius: 21px;
+    line-height: 1;
+    font-size: 14px;
+  }
+  .btnfooter span {
+    width: 74px;
+    height: 74px;
+    background-color: #202229;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+  }
+  .btn:hover span {
+    width: 220px; /*137.79*/
+    justify-content: flex-end;
+    padding-right: 15px;
+  }
+  .underlinetext {
+    position: relative;
+    display: inline-block;
+  }
+  .underlinetext:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 130%;
+    height: 1px;
+    background: linear-gradient(to right, white, #202229);
+  }
+  .undertwo {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, white, #202229);
+  }
+  .showform {
+    height: 120px;
+    opacity: 1;
+    transition: all 0.3s;
+    overflow: hidden;
+  }
+
+  .hideform {
+    height: 0px;
+    opacity: 0;
+    translate: -60px 60px;
+    overflow: hidden;
   }
   /* TODO: */
   .why-sections::-webkit-scrollbar {
     display: none;
   }
-
+  .gradient-text {
+    background-image: linear-gradient(to right, #50589f 0%, #ffbe2e 100%);
+    background-clip: text;
+    -webkit-background-clip: text; /* Safari support */
+    color: transparent;
+    font-size: 26px;
+  }
   /* Testimony style */
   .fadeIn {
     opacity: 0;
@@ -78,6 +147,56 @@
     to {
       opacity: 0;
     }
+  }
+
+  /*Journey Button*/
+
+  .btnJ {
+    position: relative;
+    width: 163.79px; /*137.79*/
+    height: 49.79px; /*49.79*/
+    border-radius: 20.19px; /*20.19*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #202229;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 18;
+  }
+  .btnJ.learnJ {
+    width: 163.79px !important; /*137.79*/
+  }
+  .btnJ label {
+    padding-left: 62px;
+    transition: 0.3s;
+  }
+  .btnJ:hover label {
+    padding-left: 16.16px;
+    padding-right: 62px;
+
+    /* padding-right: 40px; */
+    color: white;
+    /* display: inline-block;
+  width: 134px; */
+    z-index: 999;
+  }
+  .btnJ span {
+    position: absolute;
+    width: 49.79px; /*49.79*/
+    height: 49.79px; /*49.79*/
+    background-color: #202229;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20.19px;
+    left: 0px;
+    transition: 0.3s ease-in-out;
+  }
+  .btnJ:hover span {
+    width: 163px; /*137.79*/
+    justify-content: flex-end;
+    padding-right: 16.16px;
   }
 }
 
