@@ -18,7 +18,7 @@ export const switzer = localFont({
       style: "normal",
     },
     {
-      path: "./switzer/Switzer-SemiBold.otf",
+      path: "./switzer/Switzer-Semibold.otf",
       weight: "600",
       style: "normal",
     },
